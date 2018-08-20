@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/ActivityVerticalPadding"
+    android:paddingEnd="@dimen/ActivityHorizontalPadding"
+    android:paddingLeft="@dimen/ActivityHorizontalPadding"
+    android:paddingRight="@dimen/ActivityHorizontalPadding"
+    android:paddingStart="@dimen/ActivityHorizontalPadding"
+    android:paddingTop="@dimen/ActivityVerticalPadding">
+
+    <!-- Zentrierungshilfe -->
+
+    <View
+        android:id="@+id/CenterHelper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Startzeit -->
+
+    <TextView
+        android:id="@+id/StartTimeLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/CenterHelper"
+        android:layout_toStartOf="@id/CenterHelper"
+        android:text="@string/LabelStartTime"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/StartDateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StartTimeLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/CenterHelper"
+        android:layout_toStartOf="@id/CenterHelper"/>
+
+    <Button
+        android:id="@+id/StartCommand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StartDateTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/CenterHelper"
+        android:layout_toStartOf="@id/CenterHelper"
+        android:text="@string/ButtonStart"/>
+
+    <!-- Endzeit -->
+
+    <TextView
+        android:id="@+id/EndTimeLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/CenterHelper"
+        android:layout_toRightOf="@id/CenterHelper"
+        android:text="@string/LabelEndTime"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EndDateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EndTimeLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/CenterHelper"
+        android:layout_toEndOf="@id/CenterHelper"/>
+
+    <Button
+        android:id="@+id/EndCommand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EndDateTime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/CenterHelper"
+        android:layout_toEndOf="@id/CenterHelper"
+        android:text="@string/ButtonEnd"/>
+
+
+
+</RelativeLayout>
